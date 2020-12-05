@@ -1,0 +1,28 @@
+
+<div class="truck_form_container">
+
+
+<div>
+
+
+<h3 class="truck_form_header">Create Truck</h3>
+</div>
+
+
+<div class="truck_input_container">
+
+  <input class="input_field" type="text" placeholder="make" #make>
+  <input class="input_field" type="text" placeholder="model" #model>
+  <input class="input_field" type="text" placeholder="year" #year>
+
+</div>
+
+<div class="buttons_container">
+
+
+  <label class="button_custom add_to_store" (click)="addTruckToStore(make.value, model.value, year.value)">Add To Store</label>
+  <label class="button_custom add_to_non_store"  (click)="addTruckToPage(make.value, model.value, year.value)">Add To Non-Store</label>
+</div>
+
+
+</div>

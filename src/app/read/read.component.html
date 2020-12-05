@@ -1,0 +1,36 @@
+<div class="trucks_form_container">
+  <div class="trucks_data_container">
+
+    <div class="trucks_form_header">
+
+    <h3>Trucks In Store</h3>
+
+    </div>
+    <ul>
+      <li class ="list_item" *ngFor="let truck of StoreTrucks | async; let i = index">
+        <label class="list_item_data">{{ truck.make }} {{ truck.model }} {{ truck.year }}</label>
+        <label class="custom_button" (click)="delTruck(i)">Delete</label>
+      </li>
+    </ul>
+
+    <div class="db_button_container">
+      <label class="custom_db_button" (click)="saveStoreTrucks()">
+        Save All In-Store Changes to DataBase
+      </label>
+    </div>
+  </div>
+
+  <div class="trucks_data_container">
+
+    <div class="trucks_form_header">
+
+    <h3>Trucks Not In Store</h3>
+  </div>
+    <ul>
+      <li class="list_item" *ngFor="let truck of NonStoreTrucks; let i = index">
+       <label class="list_item_data"> {{ truck.make }} {{ truck.model }} {{ truck.year }} </label>
+        <label class="custom_button" (click)="delNonStoreTruck(i)">Delete</label>
+      </li>
+    </ul>
+  </div>
+</div>

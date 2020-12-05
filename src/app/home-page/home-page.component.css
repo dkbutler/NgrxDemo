@@ -1,0 +1,41 @@
+.trucks_data_container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border: 1px solid lightgray;
+  justify-content: center;
+  align-items: center;
+  margin:2rem;
+  }
+
+
+  .header_container {
+    display: flex;
+    width:100%;
+    justify-content: center;
+  }
+
+
+  .truck_form_header {
+
+    color:darkgray;
+
+  }
+
+
+  .navigation_button_container {
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+  .navigation_button {
+    color:orange;
+    border: 1px solid orange;
+    padding:5px;
+    margin:1rem;
+  }
+
+  .navigation_button:hover {
+    color:white;
+    background-color: orange;
+  }

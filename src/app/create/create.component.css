@@ -1,0 +1,62 @@
+.truck_form_container {
+display:flex;
+flex-direction: column;
+flex-wrap: nowrap;
+border: 1px solid lightgray;
+justify-content: center;
+align-items: center;
+max-width:40rem;
+margin:2rem;
+}
+
+
+.truck_form_header {
+
+  color:black;
+
+}
+
+
+.truck_input_container {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.input_field {
+  max-width:10rem;
+}
+
+.buttons_container {
+
+  margin:1rem;
+}
+
+.button_custom {
+
+  padding:5px;
+  margin:5px;
+
+}
+
+.add_to_store {
+  display: flex;
+  color:green;
+  border: 1px solid green;
+}
+
+.add_to_store:hover {
+  background-color: green;
+  color:white;;
+}
+
+.add_to_non_store {
+  display: flex;
+  color:green;
+  border: 1px solid green;
+}
+
+.add_to_non_store:hover {
+
+  color:white;
+  background-color: green;
+}
